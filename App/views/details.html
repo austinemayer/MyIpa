@@ -1,0 +1,55 @@
+<div class="detailsWrapper">
+	<h1>{{infoResults.name}}</h1>
+	<div class="infoWrapper row">
+		<div class="col-sm-3 labelImg">
+			<img src="{{infoResults.labels.medium}}"/>
+			<a ng-click="addToTryList()">Add to List<img src="img/addBtn_icon.png"/></a>
+		</div>
+		<div class="col-sm-9">
+			<div class="col-sm-12 beerInfo">
+				<ul class="col-sm-6">
+					<li>Alcohol by volume: {{infoResults.abv}}</li>
+					<li>International bittering units: {{infoResults.ibu}}</li>
+					<li>Availability: {{infoResults.available.name}}</li>
+					<li>Serving Glass: {{infoResults.glass.name}}</li>
+				</ul>
+				<div class="col-sm-3 rated">
+					<p>Rated</p>
+					<h1>34%</h1>
+				</div>
+				<div class="col-sm-3 color">
+					<p>Color</p>
+					<div></div>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<p class="description">{{infoResults.description}}</p>
+			</div>
+		</div>
+	</div>
+
+	<h1>Comments</h1>
+
+		<div class="commentWrapper row">
+			<form ng-submit="createPost()">
+				<div class="col-sm-12 formInput">
+					<div class="col-sm-1">
+						<img src="{{userAvatar}}"/>
+					</div>
+					<div class="col-sm-11">
+						<textarea  ng-model="newPost.body" placeholder="Comment"></textarea>
+						<button type="submit">Post</button>
+					</div>
+				</div>
+			</form>
+			<div ng-repeat='post in posts' class="col-sm-12 postsView">
+				<div class="col-sm-1">
+					<img src="{{post.avatar}}"/>
+				</div>
+				<div class="col-sm-11">
+					<h3>{{post.name}}</h3>
+					<p>{{post.body}}</p>
+				</div>
+			</div>
+		</div>
+</div>

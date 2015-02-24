@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app='myapp'>
+<head>
+	<meta charset="UTF-8">
+	<title>MyIPA</title>
+	<!-- bower:js -->
+	<script src="bower/angular/angular.js"></script>
+	<script src="bower/firebase/firebase.js"></script>
+	<script src="bower/firebase-simple-login/firebase-simple-login.js"></script>
+	<script src="bower/mockfirebase/dist/mockfirebase.js"></script>
+	<script src="bower/angularfire/dist/angularfire.min.js"></script>
+	<script src="bower/angular-route/angular-route.js"></script>
+	<script src="bower/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script type="text/javascript" src='main.js'></script>
+	<script src="controllers/DetailsController.js"></script>
+	<script src="controllers/SearchController.js"></script>
+	<script src="controllers/ListsController.js"></script>
+	<!-- endbower -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<!-- endbower -->
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="main">
+			<div class="container">
+				<header class="ipa-navigation navbar-fixed-top" role="navigation">
+			        <div class="container">
+			            <div class="navbar-header col-sm-3 col-xs-12">
+			                <button type="button" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                </button>
+			                <a class="navbar-brand" href="#">
+								<img class="nav-logo" src="img/myipa_nav_logo.png"/>
+			            	</a>
+			            </div>
+			            <form ng-submit="searchTerm()" ng-controller='Home' class="col-sm-6 col-xs-12">
+			            	<ul class="ipa-ul">
+				                <li class=>
+									<input type="text" ng-model="inputName" class="searchBar" placeholder="Search..."/>
+									<button type="submit" class="searchBtn"><img class="searchBtn-img" src="img/search_icon.png"/></button>
+								</li>
+				            </ul>
+						</form>
+			            <nav collapse="!isCollapsed" class="navbar-collapse collapse col-sm-3 col-xs-12 navbar-right userActions">
+				            <div ng-hide="userInfo.user">
+					            <ul class="ipa-ul col-sm-12">
+				                    <li class="col-sm-12">
+										<button ng-click="userInfo.$login('facebook');" class="ipa-button">Login</button>
+									</li>
+				                </ul>
+							</div>
+							<div ng-show="userInfo.user">
+					            <ul class="ipa-ul col-sm-12">
+				                    <li class="navActions">
+										<a ng-click="userInfo.$logout();" class="ipa-button">Logout</a>
+									</li>
+									<li class="navActions">
+										<a href="#/users/{{userInfo.user.id}}/lists" class="ipa-button"><img class="myLists" src="img/myLists_icon.png"/></a>
+									</li>
+									<li class="navActions">
+										<img class="avatar" src="{{userInfo.user.thirdPartyUserData.picture.data.url}}"/>
+									</li>
+				                </ul>
+							</div>
+			            </nav>
+			        </div>
+				</header>
+
+				<div ng-view>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="footer">
+	    <footer>
+	    	<div class="container">
+	    		<p>Copyright &copy; 2014 | Trifox Studios | Austinemayer.com | MyIpa 2014</p>
+	    	</div>
+	    </footer>
+    </div>
+
+
+</body>
+</html>

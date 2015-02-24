@@ -1,0 +1,345 @@
+* {margin:0;} 
+html, body {height: 100%;}
+#wrap {min-height: 100%;}
+#main {overflow:auto;
+  padding-bottom: 180px;}
+
+body{
+  background: url(../img/halftone.png)  top center repeat;
+}
+
+/*-------NAV-----------------------------------------------*/
+
+.ipa-navigation{
+  background-color: #fff;
+  vertical-align: center;
+}
+
+
+.navActions{
+  float: left;
+  padding-left: 20px;
+  width: 29%;
+}
+
+.myLists{
+  width: 60%;
+}
+
+.nav-logo{
+  width: 100%;
+  margin: -14px;
+}
+
+.ipa-ul{
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+  list-style-type: none;
+}
+
+.ipa-button{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.ipa-ul li .avatar{
+  margin: -13px 0 0 0;
+  width: 82%;
+}
+
+.ipa-ul li a{
+  margin: 35px 0 0 0;
+  color: #C1B49A;
+}
+
+.icon-bar{
+  background-color: #5F5648;
+}
+
+.searchBar{
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  border: 0;
+  padding: 0 0 0 2px;
+  width: 98%;
+  border-bottom: 1px solid #C1B49A; 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+input:-moz-placeholder {
+  color: #C1B49A;
+  opacity: 1;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+input::-moz-placeholder {
+  color: #C1B49A;
+  opacity: 1;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+input:-ms-input-placeholder {
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.searchBtn{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  background-color: #fff; 
+  margin-left: -25px;
+}
+
+.searchBtn-img{
+  width: 60%;
+}
+
+/*-------Footer-------------------------------------------------*/
+
+footer{
+  background-color: #fff;
+  width:100%;
+  height: 80px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#footer {
+  position: relative;
+  margin-top: -80px; /* negative value of footer height */
+  height: 80px;
+  clear:both;
+} 
+
+/*--------My Lists----------------------------------------------*/
+
+.beerLists{
+  margin-top: 70px;
+}
+
+
+.beerLists ul a{
+  text-decoration: none;
+  font: 30px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color: #47413A;
+}
+
+.beerLists h1,h2{
+  font: 48px "Lobster", CenturyGothic, AppleGothic, sans-serif;
+  margin: 0 10px 30px 200px;
+  color: #47413A;
+}
+
+.beerLists ul li{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 20px 10px 20px 20px;
+}
+
+.beerLists ul li:hover{
+  background-color: rgb(236,230,222);
+}
+
+.beerLists ul li img,p{
+  float: left;
+}
+.beerLists ul li p{
+  margin: 12px 10px 10px 20px;
+}
+
+.beerLists ul li img.floatRight{
+  margin: 0px 10px 0 10px;
+  width: 60px;
+  float: right;
+  cursor: pointer;
+}
+
+.beerLists ul li img.bIcon{
+  -webkit-mask: url('../img/cap_clip.svg') no-repeat;
+}
+
+.beerLists ul li p.floatRight{
+  margin: 10px 10px 10px 10px; 
+  font: 36px "Lobster", CenturyGothic, AppleGothic, sans-serif;
+  float:right;
+}
+
+/*--------My Lists----------------------------------------------*/
+
+.detailsWrapper{
+  margin-top: 70px;
+}
+
+.detailsWrapper h1,h2{
+  font: 48px "Lobster", CenturyGothic, AppleGothic, sans-serif;
+  margin: 20px 20px 30px 200px;
+  color: #47413A;
+}
+
+.infoWrapper{
+  background: #fff;
+  width: 100%;
+  padding: 25px 10px 20px 10px;
+}
+
+.labelImg{
+  margin: ;
+}
+
+.labelImg a{
+  font: 40px "Lobster", CenturyGothic, AppleGothic, sans-serif;
+  color: #54AF91;
+  display: inline-block;
+  margin: 10px 0 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.labelImg a img{
+  margin: 0 0 0 10px;
+}
+
+.beerInfo{
+  font: 22px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin: 20px 0 0 0;
+}
+
+.beerInfo ul li{
+  list-style-type: none;
+}
+
+.rated p{
+  width: 100%;
+  display: block;
+}
+
+.rated h1{
+  margin: 0 0 0 0;
+}
+
+.color p{
+  width: 100%;
+  display: block;
+}
+
+.color div{
+  margin: 40px 0 0 0;
+  width: 70px;
+  height: 70px;
+  background-color: #FEBE43;
+  -webkit-mask: url('../img/cap_clip.svg') no-repeat;
+}
+
+.description{
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 30px 0 0 0;
+
+}
+
+.commentWrapper{
+  background: #fff;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  margin: 0 0 0 -15px;
+}
+
+.formInput textarea{
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.formInput img{
+  width: 70px;
+  -webkit-mask: url('../img/cap_clip.svg') no-repeat;
+}
+
+.postsView img{
+  margin: 20px 0 20px 0;
+  width: 70px;
+  -webkit-mask: url('../img/cap_clip.svg') no-repeat; 
+}
+
+.postsView:nth-of-type(even){
+  background-color: rgb(236,230,222);
+}
+
+.postsView h3{
+  margin-bottom: 5px;
+  font: 22px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.formInput textarea{
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  border: 0;
+  padding: 0 0 0 2px;
+  width: 98%;
+  border: 1px solid #C1B49A; 
+}
+
+.formInput button{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+textarea::-webkit-textarea-placeholder {
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+textarea:-moz-placeholder {
+  color: #C1B49A;
+  opacity: 1;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+textarea::-moz-placeholder {
+  color: #C1B49A;
+  opacity: 1;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+textarea:-ms-textarea-placeholder {
+  color: #C1B49A;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+
+
+
+
+
+/* Responsiveness */
+
+@media (max-width: 991px) {
+   }
+@media (min-width: 768px) and (max-width: 979px) {
+   }
+@media (min-width: 768px) {
+   }
+@media (max-width: 767px) {
+  .nav-logo{
+      width: 40%;
+      margin: -14px;
+    }
+   }
+@media (max-width: 480px) {
+    
+   }

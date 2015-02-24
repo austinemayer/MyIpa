@@ -1,0 +1,9 @@
+{
+  "firebase": "myipa",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
